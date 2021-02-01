@@ -1,0 +1,6 @@
+*.pyc
+*.swp
+*.spec
+*.tree
+/dist
+/model_data
