@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 import os
-from bin.DAFD_Interface import DAFD_Interface
-from tolerance_study.TolHelper import TolHelper
+from DAFD.bin.DAFD_Interface import DAFD_Interface
+from DAFD.tolerance_study.TolHelper import TolHelper
 
 di = DAFD_Interface()
 

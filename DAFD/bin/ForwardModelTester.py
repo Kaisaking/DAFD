@@ -1,5 +1,5 @@
-from core_logic.ForwardModel import ForwardModel
-from helper_scripts.ModelHelper import ModelHelper
+from DAFD.core_logic.ForwardModel import ForwardModel
+from DAFD.helper_scripts.ModelHelper import ModelHelper
 import random
 import os
 

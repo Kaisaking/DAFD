@@ -1,7 +1,5 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-from rv_study.rv_utils import *
-from scipy.spatial import ConvexHull, convex_hull_plot_2d
+from DAFD.rv_study.rv_utils import *
+from scipy.spatial import ConvexHull
 
 # Generate minimum and maximum values
 # Taken from DAFD paper

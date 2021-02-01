@@ -1,10 +1,10 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("DAFD/README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="dafd",
+    name="DAFD",
     version="1.0.0",
     author="Ali Lashkaripour/David McIntyre",
     author_email="dpmc@bu.edu",

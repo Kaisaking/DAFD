@@ -1,10 +1,10 @@
 """A graphical interface to DAFD that does not require website hosting"""
-from helper_scripts.ModelHelper import ModelHelper
+from DAFD.helper_scripts.ModelHelper import ModelHelper
 import tkinter
 from PIL import ImageTk, Image
 from tkinter import ttk
 import tkinter.messagebox
-from bin.DAFD_Interface import DAFD_Interface
+from DAFD.bin.DAFD_Interface import DAFD_Interface
 
 class DAFD_GUI:
 	"""A class that produces a windowed interface for DAFD"""
@@ -197,7 +197,7 @@ class DAFD_GUI:
 
 		# Run Tolerance Test if Specified
 		if bool(self.entries_dict["tolerance_test"].getvar(name="PY_VAR0")):
-			from tolerance_study.TolHelper import TolHelper
+			from DAFD.tolerance_study.TolHelper import TolHelper
 			tolerance = self.entries_dict["tolerance"].get()
 			if tolerance == "":
 				tolerance = 10
@@ -221,7 +221,7 @@ class DAFD_GUI:
 
 		# Run Tolerance Test if Specified
 		if bool(self.entries_dict["tolerance_test"].getvar(name="PY_VAR0")):
-			from tolerance_study.TolHelper import TolHelper
+			from DAFD.tolerance_study.TolHelper import TolHelper
 			tolerance = self.entries_dict["tolerance"].get()
 			if tolerance == "":
 				tolerance = 10

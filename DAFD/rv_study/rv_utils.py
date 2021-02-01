@@ -3,11 +3,9 @@ Created David McIntyre, 12/15/20
 Create utils for robustness & versatility study
 """
 import numpy as np
-import os
-from bin.DAFD_Interface import DAFD_Interface
-from tolerance_study.TolHelper import TolHelper
+from DAFD.bin.DAFD_Interface import DAFD_Interface
 import pandas as pd
-from tolerance_study.tol_utils import make_sample_grid
+from DAFD.tolerance_study.tol_utils import make_sample_grid
 di = DAFD_Interface()
 
 def make_sweep_range(input_range, sweep_size):
@@ -60,7 +58,6 @@ def drop_jetting_points(grid_measure, grid):
         else:
             track_ir1.append(i)
             track_r1.append(grid[i]["capillary_number"])
-    import operator
     #print("REGIME 1")
     # index, value = max(enumerate(track_r1), key=operator.itemgetter(1))
     #print(value)

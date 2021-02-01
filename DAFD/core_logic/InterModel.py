@@ -1,21 +1,10 @@
 """The generative model that produces design suggestions"""
 
-from tqdm import tqdm
-from scipy.interpolate import Rbf
-from sklearn.linear_model import LinearRegression
-import numpy as np
-from scipy.optimize import minimize
-import random
-import numpy
-import itertools
-import csv
 import sys
 import os
-from core_logic.ForwardModel import ForwardModel
-from helper_scripts.ModelHelper import ModelHelper
-import tensorflow as tf
+from DAFD.core_logic.ForwardModel import ForwardModel
+from DAFD.helper_scripts.ModelHelper import ModelHelper
 
-from matplotlib import pyplot as plt
 
 def resource_path(relative_path):
 	""" Get absolute path to resource, works for dev and for PyInstaller """
@@ -23,7 +12,7 @@ def resource_path(relative_path):
 		# PyInstaller creates a temp folder and stores path in _MEIPASS
 		base_path = sys._MEIPASS
 	except Exception:
-		base_path = os.path.abspath(".")
+		base_path = os.path.abspath("")
 
 	return os.path.join(base_path, relative_path)
 

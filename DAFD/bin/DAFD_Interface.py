@@ -1,7 +1,6 @@
 """ Interface class for DAFD"""
-from core_logic.ForwardModel import ForwardModel
-from core_logic.InterModel import InterModel
-from helper_scripts.ModelHelper import ModelHelper
+from DAFD.core_logic.InterModel import InterModel
+from DAFD.helper_scripts.ModelHelper import ModelHelper
 
 
 class DAFD_Interface:
